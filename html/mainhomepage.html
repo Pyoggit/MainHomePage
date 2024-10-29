@@ -3,27 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="mainhomepage.css" />
     <title>메인페이지</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="./css/mainhomepage.css" />
+    <script src="./js/mainhomepage.js"></script>
     <script
       src="https://kit.fontawesome.com/01ba7af47f.js"
       crossorigin="anonymous"
     ></script>
-  </body>
-  <form>
+  </head>
+
+  <body>
+    <!-- 헤더 부분 -->
     <header>
       <div class="header-logo">
         <i class="fa-solid fa-users"></i>
         <a href="#">몽글</a>
       </div>
       <ul class="header-menu">
-        <li><a href="#">menu</a></li>
-        <li><a href="#">menu</a></li>
-        <li><a href="#">menu</a></li>
-        <li><a href="#">menu</a></li>
-        <li><a href="#">menu</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">home1</a>
+          <div class="dropdown-content">
+            <a href="#">menu1</a>
+            <a href="#">menu2</a>
+            <a href="#">menu3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">home2</a>
+          <div class="dropdown-content">
+            <a href="#">menu1</a>
+            <a href="#">menu2</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">home3</a>
+          <div class="dropdown-content">
+            <a href="#">menu1</a>
+            <a href="#">menu2</a>
+            <a href="#">menu3</a>
+            <a href="#">menu4</a>
+            <a href="#">menu5</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">home4</a>
+          <div class="dropdown-content">
+            <a href="#">menu1</a>
+            <a href="#">menu2</a>
+            <a href="#">menu3</a>
+            <a href="#">menu4</a>
+            <a href="#">menu5</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">home5</a>
+          <div class="dropdown-content">
+            <a href="#">menu1</a>
+            <a href="#">menu2</a>
+            <a href="#">menu3</a>
+            <a href="#">menu4</a>
+            <a href="#">menu5</a>
+            <a href="#">menu6</a>
+          </div>
+        </li>
       </ul>
 
       <ul class="header-icons">
@@ -36,6 +78,35 @@
       </ul>
     </header>
 
+    <!-- 세션 부분 -->
+    <section onload="carousel();">
+      <div class="slideshow">
+        <div class="slideshow_slides">
+          <a href="#"><img src="./img/slide-1.jpg" /></a>
+          <a href="#"><img src="./img/slide-2.jpg" /></a>
+          <a href="#"><img src="./img/slide-3.jpg" /></a>
+          <a href="#"><img src="./img/slide-4.jpg" /></a>
+        </div>
+        <div class="slideshow_nav">
+          <a href="#" class="prev"
+            ><i class="fa-solid fa-circle-chevron-left"></i
+          ></a>
+          <a href="#" class="next"
+            ><i class="fa-solid fa-circle-chevron-right"></i
+          ></a>
+        </div>
+        <div class="slideshow_indicator">
+          <a href="#" class="active"
+            ><i class="fa-regular fa-circle-dot"></i
+          ></a>
+          <a href="#"><i class="fa-regular fa-circle-dot"></i></a>
+          <a href="#"><i class="fa-regular fa-circle-dot"></i></a>
+          <a href="#"><i class="fa-regular fa-circle-dot"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 메인부분 -->
     <main>
       <div class="menu-left">
         <h2>국민소통</h2>
@@ -255,5 +326,5 @@
         </div>
       </div>
     </main>
-  </form>
+  </body>
 </html>
