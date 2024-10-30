@@ -117,7 +117,7 @@ section {
   width: 100%;
   height: 300px;
   margin: 0 auto;
-  background-color: blueviolet;
+  background-color: white;
 }
 
 /* 메인부분 */
@@ -126,14 +126,21 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.nav,
+div.aside {
+  width: 15%; /* nav와 aside를 동일한 비율로 설정 */
+  background-color: #f0f0f0; /* 구분을 위해 배경색 추가 */
 }
 
 div.main-center {
-  width: 70%;
+  width: 70%; /* 중앙의 main-center 넓이를 설정 */
   border: 2px solid skyblue;
-  border-collapse: collapse;
-  margin-bottom: 20px;
   text-align: center;
+  margin: 20px; /* 주변 공간 추가 */
 }
 
 thead {
@@ -170,6 +177,12 @@ td {
   text-align: left;
 }
 
+.td-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
 td i {
   color: grey;
   font-size: 0.9em;
