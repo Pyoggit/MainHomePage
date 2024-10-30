@@ -24,7 +24,6 @@ header {
   height: 80px;
   list-style: none;
   margin: 0 auto;
-  border: 1px dotted black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,6 +99,7 @@ div.dropdown-content a:hover {
 
 .header-icons {
   list-style-type: none;
+  padding-right: 20px;
   display: flex;
   justify-content: flex-end;
 }
@@ -234,11 +234,15 @@ main {
 
 .board-top h2 {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
+.board-menu {
+  display: flex;
+  justify-content: flex-end;
+}
 .board-alert {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .board-filter {
@@ -246,6 +250,29 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.left-filter {
+  padding: 5px 5px;
+}
+.left-filter a {
+  padding: 1px 5px;
+  color: #ccc;
+  background-color: #333;
+}
+.left-filter a:hover {
+  padding: 1px 5px;
+  color: #333;
+  background-color: #ccc;
+}
+
+.right-filter a {
+  padding: 1px 5px;
+  color: #ccc;
+  background-color: #333;
+}
+.right-filter a:hover {
+  color: #333;
+  background-color: #ccc;
 }
 
 .menu-table {
@@ -317,4 +344,14 @@ main {
 
 .write {
   text-align: right;
+}
+
+.write a {
+  padding: 1px 5px;
+  color: #ccc;
+  background-color: #333;
+}
+.write a:hover {
+  color: #333;
+  background-color: #ccc;
 }
